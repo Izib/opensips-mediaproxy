@@ -6,41 +6,46 @@
 
 Install
 
-package:
+    package:
 
-    主要是源代码和安装包 opensips,rtpproxy,mediaproxy,web_linphone
+        源代码和安装包 opensips,rtpproxy,mediaproxy,web_linphone
 
-instruction:
+    instruction: 
 
-    安装说明文档 opensips,rtpproxy,mediaproxy,web_linphone
+        说明文档 opensips,rtpproxy,mediaproxy,web_linphone
+        
 scripts:
 
-opensips_mediaproxy:
+    opensips_mediaproxy:
 
-    opensips.cfg配置文件： 基于opensips 和 mediaproxy(支持ICE )
+        opensips.cfg配置文件： 基于opensips 和 mediaproxy(支持ICE )
 
-opensips_rtpproxy:
+    opensips_rtpproxy:
 
-    opensips.cfg配置文件： 基于opensips 和 rtpproxy(支持 nat 穿透)
+        opensips.cfg配置文件： 基于opensips 和 rtpproxy(支持 nat 穿透)
+        
+        
+---------------------------------------------------------------------------------------
 [En] /**This repo provides the whole package of VOIP based on opensips. **/
 
 -^- What we have: linphone web(make VoIP calls using any web browsers!), mediaproxy(RTP relays that work in tandem with SIP, it supports ICE!!!), opensipsrtpproxy(a RTP relays) -^-
 
+
 Install
 
-package:
+    package:
 
-    source code of opensips,rtpproxy,mediaproxy,web_linphone
+        source code of opensips,rtpproxy,mediaproxy,web_linphone
 
-instruction:
+    instruction:
 
-    the instruction of installing opensips,rtpproxy,mediaproxy,web_linphone
+        the instruction of installing opensips,rtpproxy,mediaproxy,web_linphone
 scripts:
 
-opensips_mediaproxy:
+    opensips_mediaproxy:
 
-    Build VOIP based opensips and mediaproxy(ICE support)
+        Build VOIP based opensips and mediaproxy(ICE support)
 
-opensips_rtpproxy:
+    opensips_rtpproxy:
 
-    Build VOIP based opensips and rtpproxy(nat traversal)
+        Build VOIP based opensips and rtpproxy(nat traversal)
