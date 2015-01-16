@@ -1,23 +1,17 @@
 $erb_context = binding
 debug_level = '3'
 
-log_facility = 'LOG_LOCAL2'
-listen_ip = 'localhost'
+log_facility = 'LOG_LOCAL0'
+listen_ip = 'xxx.xxx.xxx.xxx'
 listen_port = '5060'
-db_url='mysql://username:password@localhost/database'
+db_url='mysql://user:pwd@localhost/database'
 
-app_proxy_ip = 'localhost'
-app_proxy_port = '5060'
-
-registrar_ip = 'localhost'
-registrar_port = '5060'
-
-edge_ip = 'localhost'
-
-module_path = '/usr/local/lib64/opensips/modules/'
+module_path = '/usr/local/lib64/opensips/modules'
 
 user = 'opensips'
 group = 'opensips'
+
+use_enum = '1'
 
 # We set db_url then reference it for all other db_urls
 # since they share a common db.  You can set them individually.
