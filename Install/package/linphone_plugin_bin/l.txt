@@ -1,0 +1,6 @@
+linphone-web-1.0.10-Linux-x86_64.tar.gz
+linphone-web-1.0.10-Linux-x86_64.xpi
+linphone-web-1.0.10-Linux-x86.tar.gz
+linphone-web-1.0.10-Linux-x86.xpi
+linphone-web-1.0.10-Win32.msi
+linphone-web-1.0.10-Win32.cab
