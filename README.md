@@ -28,7 +28,7 @@ scripts:
 ---------------------------------------------------------------------------------------
 [En] /**This repo provides the whole package of VOIP based on opensips. **/
 
--^- What we have: linphone web(make VoIP calls using any web browsers!), mediaproxy(RTP relays that work in tandem with SIP, it supports ICE!!!), opensipsrtpproxy(a RTP relays) -^-
+-^- What we have: linphone web(make VoIP calls using any web browsers!), mediaproxy(RTP relays that work in tandem with SIP, it supports ICE!!!), rtpproxy(a RTP relays) -^-
 
 
 Install
