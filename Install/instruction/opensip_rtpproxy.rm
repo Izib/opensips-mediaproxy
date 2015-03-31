@@ -2,7 +2,6 @@
 
 我的安装平台是 CentOS 6.5, 64位，可以使用如下命令查看：
 
-[plain] view plaincopy在CODE上查看代码片派生到我的代码片
 [root@EA-SERVER ~]# lsb_release -a  
 LSB Version:    :base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch:graphics-4.0-amd64:graphics-4.0-noarch:printing-4.0-amd64:printing-4.0-noarch  
 Distributor ID: CentOS  
@@ -11,22 +10,17 @@ Release:        6.5
 Codename:       Final  
 
 1. 安装需要的模块：
-[plain] view plaincopy在CODE上查看代码片派生到我的代码片
 [root@EA-SERVER ~]# yum -y install wget gcc bison flex zlib-devel openssl-devel mysql-server mysql-devel  
 2. 下载软件
-[plain] view plaincopy在CODE上查看代码片派生到我的代码片
 [root@EA-SERVER ~]# wget http://opensips.org/pub/opensips/latest/src/opensips-1.10.0_src.tar.gz  
 
 3. 解压软件
-[plain] view plaincopy在CODE上查看代码片派生到我的代码片
 [root@EA-SERVER ~]# tar xf opensips-1.10.0_src.tar.gz  
 
 4. 编译安装
-[plain] view plaincopy在CODE上查看代码片派生到我的代码片
 [root@EA-SERVER ~]# cd opensips-1.10.0-tls/  
 [root@EA-SERVER ~]# make menuconfig  
 文本图形配置界面如下图所示：
-[plain] view plaincopy在CODE上查看代码片派生到我的代码片
         OpenSIPS Main Configuration Menu  
  ___________________________________________  
 |                                           |  
@@ -61,20 +55,16 @@ DBRWPW="opensipsrw"
 DBROOTUSER="root"
 然后使用如下命令创建数据库，注意输入mysql管理员密码
 
-[plain] view plaincopy在CODE上查看代码片派生到我的代码片
 [root@EA-SERVER ~]# opensipsdbctl create  
 6. 安装 rtpproxy
 下载
 
-[plain] view plaincopy在CODE上查看代码片派生到我的代码片
 [root@EA-SERVER ~]# git clone git://sippy.git.sourceforge.net/gitroot/sippy/rtpproxy  
 安装
-[plain] view plaincopy在CODE上查看代码片派生到我的代码片
 [root@EA-SERVER ~]# cd rtpproxy  
 [root@EA-SERVER ~]# ./configure&&make&&make install  
 
 运行
-[plain] view plaincopy在CODE上查看代码片派生到我的代码片
 [root@EA-SERVER ~]# rtpproxy -l xxx.xxx.xxx.xxx -s udp:xxx.xxx.xxx.xxx:7890 -u opensips -d DBUG:LOG_LOCAL5
 
 此处都填写为当前服务器ip地址
@@ -83,7 +73,6 @@ DBROOTUSER="root"
 
 在命令行下输入 osipsconfig 会进入opensips 功能文件配置界面
 
-[plain] view plaincopy在CODE上查看代码片派生到我的代码片
           OpenSIPS Main Configuration Menu  
   
   
@@ -111,10 +100,8 @@ Press h for navigation help.
 
 8. 创建测试账户
 
-[plain] view plaincopy在CODE上查看代码片派生到我的代码片
 [root@EA-SERVER ~]# opensipsctl add 101@xxx.xxx.xxx.xxx 123456  
 [root@EA-SERVER ~]# opensipsctl add 102@xxx.xxx.xxx.xxx 123456  
 9. 启动服务
-[plain] view plaincopy在CODE上查看代码片派生到我的代码片
 [root@EA-SERVER ~]# opensipsctl start  
-10. 使用 SIP 客户端 SipDroid或者IMSDroid在 Android 手机上可以测试101和102通话了。
+10. 使用 SIP 客户端 SipDroid或者IMSDroid在 Android 手机上可以测试101和102通话了。pain
