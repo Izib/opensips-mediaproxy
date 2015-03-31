@@ -49,3 +49,6 @@ scripts:
     opensips_rtpproxy:
 
         Build VOIP based opensips and rtpproxy(nat traversal)
+
+
+linphone web_linphone can be found here: http://www.linphone.org/technical-corner/linphone-web/downloads
