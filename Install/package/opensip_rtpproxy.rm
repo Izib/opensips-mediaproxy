@@ -60,7 +60,8 @@ DBROOTUSER="root"
 然后使用如下命令创建数据库，注意输入mysql管理员密码
 
 
-[root@EA-SERVER ~]# opensipsdbctl create  
+[root@EA-SERVER ~]# opensipsdbctl create （choose latin1）
+
 5. 安装 rtpproxy
 
 [root@EA-SERVER ~]# cd rtpproxy  
